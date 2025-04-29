@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Hejbou Ahmed</title>
+    <style>
+        /* Reset et Polices */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            margin-bottom: 1rem;
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: #333;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav ul li a {
+            color: white;
+            padding: 1rem 2rem;
+            display: block;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            background-color: #6e48aa;
+        }
+        
+        /* Sections */
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #6e48aa;
+            font-size: 2.5rem;
+        }
+        
+        /* À propos */
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .skills {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .skill-item {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        /* Projets */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .project-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .project-info {
+            padding: 1.5rem;
+        }
+        
+        /* Contact */
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .contact-form {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        form input, form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        form button {
+            background-color: #6e48aa;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        form button:hover {
+            background-color: #9d50bb;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="accueil">
+        <img src="WhatsApp Image 2025-04-28 at 20.58.56_f8840967.jpg" alt="Photo de profil" class="profile-img">
+        <h1>Hejbou Ahmed Salem Cherghy</h1>
+        <p>Développeur Web Full-Stack</p>
+    </header>
+    
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Section À propos -->
+    <section id="apropos">
+        <h2>À propos de moi</h2>
+        <div class="about-content">
+            <div class="bio">
+                <p>Développeur Web et programmeur polyvalent, je maîtrise plusieurs langages de programmation et frameworks. Passionné par la création de solutions numériques optimisées et innovantes.</p>
+                <p>Je possède également des compétences solides en maintenance informatique et en gestion de bases de données.</p>
+            </div>
+            <div class="skills">
+                <h3>Compétences Techniques</h3>
+                <div class="skills-list">
+                    <div class="skill-item">HTML/CSS</div>
+                    <div class="skill-item">JavaScript</div>
+                    <div class="skill-item">Python</div>
+                    <div class="skill-item">Java</div>
+                    <div class="skill-item">C++</div>
+                    <div class="skill-item">MySQL</div>
+                    <div class="skill-item">Microsoft Office</div>
+                    <div class="skill-item">Maintenance PC</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section CV -->
+    <section id="cv">
+        <h2>Mon Curriculum Vitae</h2>
+        <div class="cv-section">
+            <h3>Expérience Professionnelle</h3>
+            <div class="experience">
+                <h4>Développeur Full-Stack (Freelance)</h4>
+                <p>Conception d'applications web avec Python/JavaScript. Optimisation de bases de données MySQL.</p>
+            </div>
+            
+            <h3>Formation</h3>
+            <div class="education">
+                <h4>Diplôme en Développement Web</h4>
+                <p>Université/École - Année</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section Projets -->
+    <section id="projets">
+        <h2>Mes Projets</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Application de Gestion Commerciale" class="project-img">
+                <div class="project-info">
+                    <h3>Application de Gestion Commerciale</h3>
+                    <p>Outil de suivi des ventes et stocks développé avec Python et MySQL.</p>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Application Gestion de Salles" class="project-img">
+                <div class="project-info">
+                    <h3>Application Gestion de Salles</h3>
+                    <p>Système de réservation et planning automatisé avec Java/JavaScript.</p>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200" alt="Gestion de Rendez-vous Clinique" class="project-img">
+                <div class="project-info">
+                    <h3>Gestion de Rendez-vous Clinique</h3>
+                    <p>Plateforme complète pour patients et médecins (Full-Stack).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Coordonnées</h3>
+                <p>Email: 24162@gmail.com</p>
+                <p>Téléphone: +222 32 44 34 84</p>
+                <p>Adresse: Ville, Pays</p>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <input type="text" placeholder="Votre nom" required>
+                    <input type="email" placeholder="Votre email" required>
+                    <input type="text" placeholder="Sujet">
+                    <textarea rows="5" placeholder="Votre message" required></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Hejbou Ahmed. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
